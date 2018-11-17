@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<link href="css/login.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="App Loction Form,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements"./>
+<script type="application/x-javascript">
+	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+	function myFunction(){
+		var username=document.getElementById("name").value;
+		var pw=document.getElementById("pw").value;
+		if(username=="fu1997"&&pw=="girl1202"){
+			var sure = confirm("你确定要退出么！");
+			if(sure){
+				alert("我当初写的些啥啊( ⊙ o ⊙ ),好傻吖");
+				window.location.href="mainpage.html";
+			}
+		}
+		else
+			alert("请向管理员获取账号密码");
+	}
+</script>
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+		<div class="app-location">
+			<h2>Welcome to  personal blog </h2>
+			<div class="line"><span></span></div>
+			<div class="location"><img src="images/location.png" class="img-responsive" alt="" /></div>
+			<form>
+				<input type="text" class="text" placeholder="private account" id="name" >
+				<input type="password" placeholder="password" id="pw">
+				<div class="submit"><a href="#"><input type="submit" onclick="myFunction();return false" value="Sign in" ></a></div>
+				<div class="clear"></div>
+				<div class="new">
+					<h3><a href="#" onclick="alert('请向管理员获取账号密码');">Forgot password ?</a></h3>
+					<h4><a href="#" onclick="alert('请向管理员获取账号密码');">New here ? Sign Up</a></h4>
+					<div class="clear"></div>
+				</div>
+			</form>
+		</div>
+</body>
+</html>
